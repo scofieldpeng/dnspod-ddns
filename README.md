@@ -26,7 +26,7 @@ DNSPOD_EMAIL=example@example.com
 ### docker运行
 
 ```bash
-docer run --name=ddns --restart=always -d \
+docker run --name=ddns --restart=always -d \
     -e DNSPOD_ID=${DNSPOD_ID} \
     -e DNSPOD_TOKEN=${DNSPOD_TOKEN} \
     -e DNSPOD_DOMAIN=${DNSPOD_DOMAIN} \
